@@ -1,9 +1,9 @@
-import org.junit.{Assert, Test, Before}
+import org.junit.{Assert, Before}
 
 /**
  * @author E119507Z
  */
-class tests {
+class Tests {
   
   var workspace : Workspace = new Workspace()
   
@@ -18,7 +18,7 @@ class tests {
   
   /* test de la commande write */
   
-  @Test
+  @Tests
   def testWrite() : Unit = {
     workspace.executeCommande(new Write(workspace,"Recoucou test!"))
     workspace.executeCommande(new Write(workspace,"Non"))
@@ -27,7 +27,7 @@ class tests {
   
   /* tests de la commande selectionner */ 
   
-  @Test
+  @Tests
   def testSelectionner() : Unit = {
     
     workspace.executeCommande(new Selectionner(workspace,0,6))
@@ -39,7 +39,7 @@ class tests {
     Assert.assertEquals("Selection test contenu buffer after 2 ", "Coucou test!", workspace.buffer.getZone)
   }
   
-  @Test 
+  @Tests
   def testDeplaceSelection() : Unit={
     var selec : Selectionner =new Selectionner(workspace,0,6)
     workspace.executeCommande(selec)
@@ -56,7 +56,7 @@ class tests {
   
   /* tests de la commande copy */ 
   
-  @Test
+  @Tests
   def testCopy() : Unit = {
     workspace.executeCommande(new Selectionner(workspace,0,6))
     workspace.executeCommande(new Copy(workspace))
@@ -74,7 +74,7 @@ class tests {
 
   /* tests de la commande paste */
   
-  @Test
+  @Tests
   def testPaste() : Unit={
     workspace.executeCommande(new Selectionner(workspace,0,6))
     workspace.executeCommande(new Copy(workspace))
@@ -96,7 +96,7 @@ class tests {
   /*tests de la commande cut*/
 
   
-  @Test
+  @Tests
   def testCut() : Unit={
      Assert.assertEquals("cut test contenu buffer ", "Coucou test!", workspace.buffer.getZone)
      
@@ -116,7 +116,7 @@ class tests {
   }
   
   /* tests de la commande delete */
-  @Test
+  @Tests
   def testDelete() : Unit={
      Assert.assertEquals("delete test contenu buffer first", "Coucou test!", workspace.buffer.getZone)
      var selec : Selectionner = new Selectionner(workspace,0,6)
@@ -134,7 +134,7 @@ class tests {
   
   /* tests de la commande replace */
   
-  @Test 
+  @Tests
   def testReplace() :Unit={
     Assert.assertEquals("Replace Unique test contenu buffer ", "Coucou test!", workspace.buffer.getZone)
     
@@ -162,7 +162,7 @@ class tests {
   
   /* tests de la commande Undo */
   
-  @Test 
+  @Tests
   def testUndo() : Unit={
     Assert.assertEquals("Undo  test contenu buffer debut", "Coucou test!", workspace.buffer.getZone)
   /*Assert.assertEquals("Undo Multiple test gardien 0 deb ap","" , workspace.gardien.listMemento(0).getBufferApres.getZone)
@@ -187,7 +187,7 @@ class tests {
   */
   }
   
-  @Test 
+  @Tests
   def testOverUndo() : Unit ={
     Assert.assertEquals("Undo over test contenu buffer debut", "Coucou test!", workspace.buffer.getZone)
   
@@ -210,7 +210,7 @@ class tests {
   
   /*test de la commande redo */
   // cette fonction est comme unique car on ne peut redo qu'une seule commande
-  @Test
+  @Tests
   def testRedo() : Unit={
     Assert.assertEquals("redo test contenu buffer deb", "Coucou test!", workspace.buffer.getZone)
     
@@ -225,7 +225,7 @@ class tests {
   
   /* test de la commande MoveCursor */
   
-  @Test
+  @Tests
   def testMoveCursor() : Unit = {
     Assert.assertEquals("moveCursor  test contenu buffer ", "Coucou test!", workspace.buffer.getZone)
     
@@ -243,7 +243,7 @@ class tests {
     
   /* tests de la commande macro*/
   
-  @Test
+  @Tests
   def testMacro() :Unit = {
     Assert.assertEquals("macrotest contenu buffer ", "Coucou test!", workspace.buffer.getZone)
     
@@ -258,7 +258,7 @@ class tests {
   /* tests reexecution commande */
   
   
-  @Test
+  @Tests
   def testReexecute() :Unit={
     Assert.assertEquals("reexe test contenu buffer ", "Coucou test!", workspace.buffer.getZone)
     workspace.reexecuteCommande()

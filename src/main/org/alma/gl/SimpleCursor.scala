@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class SimpleCursor (private var pos :Int) extends Cursor{
   
   def setPos(position : Int) : Unit={

@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class Delete (w : Workspace ) extends Command(w) {
   
    override def execute{
