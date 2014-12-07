@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class Write (w : Workspace,var s:String) extends Command(w){
   
   override def execute() : Unit={

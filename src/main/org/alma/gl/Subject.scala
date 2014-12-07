@@ -1,3 +1,5 @@
+package org.alma.gl
+
 abstract class Subject {
   
   private var observers: List[Observer] = Nil
