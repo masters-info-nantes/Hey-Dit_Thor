@@ -1,9 +1,10 @@
+import org.alma.gl._
 import org.junit.{Assert, Test, Before}
 
 /**
  * @author E119507Z
  */
-class tests {
+class Tests {
   
   var workspace : Workspace = new Workspace()
   

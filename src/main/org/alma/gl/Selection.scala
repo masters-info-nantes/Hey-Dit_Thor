@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class Selection{
   private var curseur : DoubleCursor = new DoubleCursor(0,0)
   private var contenu : String = ""

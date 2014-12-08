@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class DoubleCursor(private var posDeb : Int, private var posFin : Int) {
   
   def Select( deb : Int, fin : Int) : Unit={
