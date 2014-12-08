@@ -3,7 +3,8 @@ package org.alma.gl
 
 
 /**
- * @author E120404Z
+ * Commande permettant de copier la selection dans le presse papier
+ * en supprimant dans le texte le contenu de la selection
  */
 class Cut (w : Workspace) extends Command(w) {
   

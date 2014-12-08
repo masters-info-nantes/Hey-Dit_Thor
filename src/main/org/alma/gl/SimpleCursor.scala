@@ -1,5 +1,7 @@
 package org.alma.gl
-
+/**
+ * Classe cuseur indiquant une position
+ */
 class SimpleCursor (private var pos :Int) extends Cursor{
   
   def setPos(position : Int) : Unit={

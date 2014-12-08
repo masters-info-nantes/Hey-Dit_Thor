@@ -2,7 +2,7 @@ import org.alma.gl._
 import org.junit.{Assert, Test, Before}
 
 /**
- * @author E119507Z
+ * Tests
  */
 class Tests {
   

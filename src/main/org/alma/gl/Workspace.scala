@@ -2,7 +2,12 @@ package org.alma.gl
 
 
 /**
- * @author 
+ * Zone de travail contenant:
+ * un presse papier
+ * une selection
+ * une zone de texte
+ * un gardien pour les anciens etats
+ * la commande en cours d'execution
  */
 class Workspace extends Subject{
   

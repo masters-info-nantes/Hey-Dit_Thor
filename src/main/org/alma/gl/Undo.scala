@@ -1,9 +1,8 @@
 package org.alma.gl
 
-
-
 /**
- * @author E120404Z
+ * Commande permettant d'annuler une commande
+ * retabli l'etat precedent du buffer et de la commande
  */
 class Undo (w : Workspace) extends Command(w) {
   

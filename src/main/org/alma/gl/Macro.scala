@@ -3,6 +3,7 @@ package org.alma.gl
 import scala.collection.mutable.ListBuffer
 
 /**
+ * Commande composee de plusieurs commandes
  * @author E120404Z
  */
 class Macro (w: Workspace) extends Command(w){

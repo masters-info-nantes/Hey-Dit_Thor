@@ -1,14 +1,15 @@
 package org.alma.gl
 
-
 /**
+ * Zone de texte contenant un texte et une selection
  * @author E120404Z
+ * 
  */
 class Buffer {
   private var zone : String = ""
   private var curseurCourant : SimpleCursor = new SimpleCursor(0)
    
-  
+  // genere un clone du buffer
   override def clone() : Buffer={ 
       var buf : Buffer = new Buffer
       buf.zone = this.zone
@@ -28,6 +29,7 @@ class Buffer {
     return curseurCourant
   }
   
+ //insere la string en parametre a l'emplacement du curseur
   def ecrire(s:String) : Unit={
     
     var str : String = ""
@@ -73,10 +75,14 @@ class Buffer {
     println(str)  
   }
   
+ 
   def deplaceCurseurCourant (n : Int): Unit={
+    //si l'entier passer en aparametre est trop grand on place
+    //le curseur a la fin du texte
     if(n> zone.length())
       { curseurCourant.setPos(zone.length()) }
     else{
+      //si negatif on place le curseur au debut du texte
       if(n<0)
         {curseurCourant.setPos(0)}
       else

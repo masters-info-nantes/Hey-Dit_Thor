@@ -2,7 +2,9 @@ package org.alma.gl
 
 
 /**
- * @author 
+ * conserve un etat du buffer apres qu'un commande ai ete executee
+ * ainsi que la commande
+ * 
  */
 class Memento(b: Buffer ,c : Command) {
   

@@ -16,7 +16,7 @@ object test {
     // w.affiche
      //pour selectionner faire un controle de string vide
       println("a pour ne rien faire , c pour copier  , v pour coller,x pour cut, m  pour selectionner, d pour deplacer le curseur , e pour ecrire, u undo")
-      println("r redo, mac pour definir une macro,re pour reexecuter une commande")
+      println("r redo,re pour reexecuter une commande")
       var choix : String = readLine()
       while(choix != "a"){
         if (choix == "c"){

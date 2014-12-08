@@ -1,9 +1,8 @@
 package org.alma.gl
 
-
-
 /**
- * @author E120404Z
+ * Colle le contenu du clipboard au niveau du
+ * curseur courant dans le texte
  */
 class Paste (w : Workspace) extends Command(w){
    

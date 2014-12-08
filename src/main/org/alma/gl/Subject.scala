@@ -1,5 +1,7 @@
 package org.alma.gl
-
+/**
+ * Sujet observable
+ */
 abstract class Subject {
   
   private var observers: List[Observer] = Nil

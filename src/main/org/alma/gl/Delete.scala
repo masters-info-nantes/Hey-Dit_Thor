@@ -1,5 +1,7 @@
 package org.alma.gl
-
+/**
+ * Commande permettant de supprimer la selection dans le texte
+ */
 class Delete (w : Workspace ) extends Command(w) {
   
    override def execute{

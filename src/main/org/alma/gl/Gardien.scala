@@ -2,7 +2,8 @@ package org.alma.gl
 
 import scala.collection.mutable.ListBuffer
 /**
- * @author 
+ * Conserve les Etat du buffer ainsi que les commandes 
+ * realisees par l'utilisateur
  */
 class Gardien {
   

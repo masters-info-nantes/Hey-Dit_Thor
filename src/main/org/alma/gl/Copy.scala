@@ -3,7 +3,7 @@ package org.alma.gl
 
 
 /**
- * @author E120404Z
+ * Commande permettant de copier la selection dans le presse papier
  */
 class Copy (w : Workspace) extends Command(w){
 

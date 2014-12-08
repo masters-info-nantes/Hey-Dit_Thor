@@ -1,5 +1,7 @@
 package org.alma.gl
-
+/**
+ * remplace la selection par le contenu du clipboard
+ */
 class Replace (w: Workspace) extends Command(w) {
   
    override def execute () : Unit={

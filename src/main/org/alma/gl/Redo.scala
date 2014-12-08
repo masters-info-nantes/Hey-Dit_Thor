@@ -1,9 +1,10 @@
 package org.alma.gl
 
 
-
 /**
- * @author E120404Z
+ * Reexecute une commande qui a ete undo
+ * /!\ a faire uniquement apres des undo
+ * sinon sa peut reexecuter une vieille commande
  */
 class Redo (w : Workspace) extends Command(w) {
   

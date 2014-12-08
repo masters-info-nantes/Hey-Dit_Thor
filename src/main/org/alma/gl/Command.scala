@@ -1,9 +1,7 @@
 package org.alma.gl
 
-
-
 /**
- * @author E120404Z
+ * Classe abstraite des commandes
  */
 abstract class Command (w : Workspace){
   var work : Workspace = w

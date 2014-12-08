@@ -1,8 +1,7 @@
 package org.alma.gl
 
-
-
 /**
+ * Presse papier
  * @author E120404Z
  */
 class ClipBoard  {
