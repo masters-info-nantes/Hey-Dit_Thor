@@ -52,7 +52,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>test</mainClass>
+							<mainClass>org.alma.gl.test</mainClass>
 							<addClasspath>true</addClasspath>
 							<classpathLayoutType>custom</classpathLayoutType>
 							<customClasspathLayout>lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}

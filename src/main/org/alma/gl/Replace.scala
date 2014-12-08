@@ -1,3 +1,5 @@
+package org.alma.gl
+
 class Replace (w: Workspace) extends Command(w) {
   
    override def execute () : Unit={

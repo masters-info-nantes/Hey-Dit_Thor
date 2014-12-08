@@ -1,3 +1,4 @@
+import org.alma.gl._
 import org.junit.{Assert, Test, Before}
 
 /**

@@ -1,6 +1,4 @@
-
-import scala.collection.mutable.ArrayBuffer
-import scala.io.Source
+package org.alma.gl
 
 /**
  * @author E120404Z

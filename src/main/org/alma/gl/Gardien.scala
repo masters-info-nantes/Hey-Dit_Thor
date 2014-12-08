@@ -1,4 +1,5 @@
-import scala.collection.mutable.ListBuffer
+package org.alma.gl
+
 import scala.collection.mutable.ListBuffer
 /**
  * @author 
